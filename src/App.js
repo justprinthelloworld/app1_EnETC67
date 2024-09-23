@@ -7,11 +7,26 @@ import MessageBox from './state-func'
 import { userContext } from './context'
 import Header2 from './context-header2'
 import Content2 from './context-content2'
+import Router2 from './router2'
+import Router3 from './router3'
+import Router4 from './router4'
 
 export default function App() {
   let [user, setUser] = React.useState('')
   return (
     <>
+      <h2><center>react-routingStudyNavigate(Redirect)</center></h2>
+        <Router4/>
+      <hr/>
+
+      <h2><center>react-routingStudyRoutes</center></h2>
+        <Router3/>
+      <hr/>
+
+      <h2><center>react-routingStudyNavLink</center></h2>
+        <Router2/>
+      <hr/>
+
       <h2><center>react-contextStudy</center></h2>
         <userContext.Provider value = {[user, setUser]}>
           <Header2/>
